@@ -181,6 +181,8 @@ function redondearHaciaArriba(num) {
 function numeroRandom() {
   //Generar un número al azar entre 0 y 1 y devolverlo
   //Pista: investigá qué hace el método Math.random()
+  return Math.random( 0 , 1);
+
   
 }
 
@@ -189,6 +191,14 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
+  if(numero === 0){
+    return false;
+  } else if(numero > 0){
+    return "Es positivo";
+  } else {
+    return "Es negativo";
+  }
+  
   
 }
 
